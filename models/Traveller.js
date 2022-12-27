@@ -18,6 +18,9 @@ Traveller.init(
     email: {
       type: DataTypes.STRING,
       allowNull: false,
+      validate: {
+        isEmail: true,
+      },
     },
   },
   {
